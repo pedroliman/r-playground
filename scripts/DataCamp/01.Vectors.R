@@ -83,3 +83,35 @@ poker_midweek
 # Define a new variable based on a selection
 roulette_selection_vector <- roulette_vector[2:4]
 
+
+#' Selecionando as variáveis usando o nome e avaliando a média.
+
+# Select poker results for Monday, Tuesday and Wednesday
+poker_start <- poker_vector[c("Monday", "Tuesday", "Wednesday")]
+
+# Calculate the average of the elements in poker_start
+mean(poker_start)
+
+# Which days did you make money on poker?
+selection_vector <- poker_vector > 0
+
+selection_vector
+
+#' Selecionando dados de um vetor com um vetor de dados booleanos
+
+poker_winning_days <- poker_vector[selection_vector]
+
+# Isso aqui em baixo pode selecionar dia sim, dia não
+# poker_winning_days = poker_vector[c(TRUE, FALSE)] 
+
+poker_winning_days
+
+#' Seleção Avançada, agora com os Winning Days
+
+# Which days did you make money on roulette?
+selection_vector <- roulette_vector > 0
+  
+# Select from roulette_vector these days
+roulette_winning_days <- roulette_vector[selection_vector]
+
+roulette_winning_days
