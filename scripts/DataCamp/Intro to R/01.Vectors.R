@@ -1,4 +1,3 @@
-
 #' Criando Vetores com valores simples
 #' ========================================================
 
@@ -22,7 +21,7 @@ roulette_vector <-  c(-24, -50, 100, 350, 10)
 
 poker_vector
 
-#' Nomeando as Variáveis de um Vetor
+#' Nomeando as VariÃ¡veis de um Vetor
 #' ========================================================
 # Poker winnings from Monday to Friday
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -73,17 +72,17 @@ total_week
 # Check if you realized higher total gains in poker than in roulette 
 total_poker > total_roulette
 
-#' Selecionando uma variável
+#' Selecionando uma vari?vel
 # Define a new variable based on a selection
 poker_wednesday <- poker_vector["Wednesday"]
 poker_wednesday
 
-#' Selecionando vários elementos dentro de um vetor:
+#' Selecionando v?rios elementos dentro de um vetor:
 poker_midweek = poker_vector[c(2,3,4)]
 poker_midweek
 
-#' Uma forma mais elegante de fazer isso é usar a notação i:j, por exemplo:
-#' Selecionando vários elementos dentro de um vetor:
+#' Uma forma mais elegante de fazer isso ? usar a nota??o i:j, por exemplo:
+#' Selecionando v?rios elementos dentro de um vetor:
 poker_midweek = poker_vector[2:4]
 poker_midweek
 
@@ -91,7 +90,7 @@ poker_midweek
 roulette_selection_vector <- roulette_vector[2:4]
 
 
-#' Selecionando as variáveis usando o nome e avaliando a média.
+#' Selecionando as vari?veis usando o nome e avaliando a m?dia.
 
 # Select poker results for Monday, Tuesday and Wednesday
 poker_start <- poker_vector[c("Monday", "Tuesday", "Wednesday")]
@@ -108,12 +107,12 @@ selection_vector
 
 poker_winning_days <- poker_vector[selection_vector]
 
-# Isso aqui em baixo pode selecionar dia sim, dia não
+# Isso aqui em baixo pode selecionar dia sim, dia n?o
 # poker_winning_days = poker_vector[c(TRUE, FALSE)] 
 
 poker_winning_days
 
-#' Seleção Avançada, agora com os Winning Days
+#' Sele??o Avan?ada, agora com os Winning Days
 
 # Which days did you make money on roulette?
 selection_vector <- roulette_vector > 0
